@@ -1,0 +1,7 @@
+numpy
+keras
+pandas
+sklearn
+tensorflow
+flask
+ttictoc

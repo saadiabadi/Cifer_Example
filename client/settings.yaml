@@ -1,0 +1,12 @@
+
+# How much to bias the client data samples towards certain classes (non-IID data partitions)
+bias: 0.7
+testSize: 0.05
+# Parameters for local training
+batch_size: 32
+epochs: 1
+model_dimension: VGG16
+trained_Layers: 2
+#Device settings
+device: cuda
+val_device: cuda

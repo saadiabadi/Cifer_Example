@@ -1,0 +1,20 @@
+version: '3.3'
+services:
+  client:
+    environment:
+      - GET_HOSTS_FROM=dns
+    image: "cifar-client:latest"
+    build:
+      context: .
+    working_dir: /app
+    command: /bin/bash -c "fedn run client -in fedn-network.yaml"
+    volumes:
+      - ./data:/app/data
+      - ./fedn-network.yaml:/app/fedn-network.yaml
+
+#networks:
+#  default:
+#    external:
+#      name: fedn_default
+
+
