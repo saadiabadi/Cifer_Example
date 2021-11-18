@@ -7,10 +7,10 @@ services:
     build:
       context: .
     working_dir: /app
-    command: /bin/bash -c "fedn run client -in fedn-network.yaml"
+    command: /bin/bash -c "fedn run client -in client.yaml"
     volumes:
       - ./data:/app/data
-      - ./fedn-network.yaml:/app/fedn-network.yaml
+      - ./client.yaml:/app/client.yaml
 
 #networks:
 #  default:

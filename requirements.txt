@@ -1,6 +1,7 @@
 numpy
 keras
 pandas
+h5py
 sklearn
 tensorflow
 flask

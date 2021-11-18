@@ -89,8 +89,7 @@ def train(model, data, settings):
     with open('/app/time.txt', '+a') as f:
         print(elapsed, file=f)
 
-    with open('/app/layers.txt', '+a') as f:
-        print(settings['trained_Layers'], file=f)
+
 
     # print("x_train shape: : ", x_train.shape)
     # model.fit(x_train, y_train, batch_size=settings['batch_size'], epochs=settings['epochs'], verbose=True)

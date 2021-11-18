@@ -31,6 +31,10 @@ def create_seed_model(input_shape=(32,32,3), dimension='VGG16', trainedLayers=0)
 
         randomlist = random.sample(trainable_layers[dimension], trainedLayers)
         print(randomlist)
+
+        with open('/app/layers.txt', '+a') as f:
+            print(settings['trained_Layers'], file=f)
+
         model = Sequential()
         model.add(tensorflow.keras.Input(shape=input_shape))
         for x in cfg[dimension]:

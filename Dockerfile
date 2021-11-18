@@ -5,7 +5,7 @@
 #
 ##RUN pip install -e git://github.com/scaleoutsystems/fedn.git@develop#egg=fedn\&subdirectory=fedn
 #
-#COPY fedn-network.yaml /app/
+#COPY client.yaml /app/
 #COPY requirements.txt /app/
 ##COPY hello.py /app/
 ##COPY client /app/
@@ -13,7 +13,7 @@
 #RUN pip install -r requirements.txt
 
 FROM python:3.8.9
-#COPY fedn-network.yaml /app/
+#COPY client.yaml /app/
 COPY requirements.txt /app/
 WORKDIR /app/
 RUN pip install -r requirements.txt
@@ -21,7 +21,7 @@ RUN pip install -e git://github.com/scaleoutsystems/fedn.git@develop#egg=fedn\&s
 
 #FROM python:3.8.9
 #COPY requirements.txt /app/
-##COPY fedn-network.yaml /app/
+##COPY client.yaml /app/
 #WORKDIR /app
 #RUN pip install -r requirements.txt
 #RUN pip install -e git://github.com/scaleoutsystems/fedn.git@develop#egg=fedn\&subdirectory=fedn

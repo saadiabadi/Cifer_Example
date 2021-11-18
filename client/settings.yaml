@@ -1,7 +1,7 @@
 
 # How much to bias the client data samples towards certain classes (non-IID data partitions)
 bias: 0.7
-testSize: 0.05
+testSize: 0.08
 # Parameters for local training
 batch_size: 32
 epochs: 1
