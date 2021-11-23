@@ -1,5 +1,10 @@
 version: '3.3'
 services:
-   client:
+   client1:
      extra_hosts:
         combiner1: 130.238.28.108
+        combiner2: 130.238.28.134
+   client2:
+     extra_hosts:
+        combiner1: 130.238.28.108
+        combiner2: 130.238.28.134

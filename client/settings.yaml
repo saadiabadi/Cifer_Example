@@ -6,7 +6,7 @@ testSize: 0.08
 batch_size: 32
 epochs: 1
 model_dimension: VGG16
-trained_Layers: 2
+trained_Layers: 1
 #Device settings
 device: cuda
 val_device: cuda
